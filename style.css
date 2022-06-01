@@ -1,197 +1,233 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #1d1d1d;
-  }
-  h1 {
-    font-size: 3em;
-    color: #e8e8e8;
-    position: relative;
-    right: 5px;
-    padding: 10px 20px 10px 20px;
-  }
-  h2 {
-    font-size: 1em;
-    color: #930017;
-    padding: 20px 20px 10px 20px;
-    color: #c9c9c9;
-  }
-  
-  p {
-    padding: 10px 20px 10px 20px;
-  }
-  main {
-    position: relative;
-  }
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #1d1d1d;
+}
+h1 {
+  font-size: 3em;
+  color: #e8e8e8;
+  position: relative;
+  right: 5px;
+  padding: 10px 20px 10px 20px;
+}
+h2 {
+  font-size: 1em;
+  color: #930017;
+  padding: 20px 20px 10px 20px;
+  color: #c9c9c9;
+}
+
+p {
+  padding: 10px 20px 10px 20px;
+}
+main {
+  position: relative;
+}
+
+.h1 {
+  position: absolute;
+  right: 5px;
+  margin: 0;
+  padding-top: 30px;
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #930017;
+}
+.h2 {
+  padding: 70px 0 20px;
+  margin: 0;
+  font-size: 2em;
+  font-family: roboto;
+  color: #777a84;
+}
+
+p {
+  color: #e8e8e8;
+}
+
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 350px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #a2a2a2;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.logo {
+  size: 100%;
+}
+
+section.kunst {
+  background-color: rgb(71, 70, 70);
+}
+section.kunstnere {
+  background-color: rgb(45, 44, 44);
+}
+section.aabenthus {
+  background-color: rgb(45, 44, 44);
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  margin-top: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background-color: rgb(23, 22, 22);
+}
+footer p {
+  color: #e8e8e8;
+}
+
+/* web responsive tablet */
+@media screen and (min-width: 700px) {
   .h1 {
-    position: absolute;
-    right: 5px;
-    margin: 0;
-    padding-top: 30px;
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #930017;
+    font-size: 5em;
   }
   .h2 {
-    padding: 70px 0 20px;
-    margin: 0;
-    font-size: 2em;
-    font-family: roboto;
-    color: #777a84;
+    font-size: 4em;
+    padding: 100px 10px 50px 100px;
   }
-  
-  p {
-    color: #e8e8e8;
+  .logo img {
+    height: 600px;
+    width: 80px;
+    padding: 20px 30px;
+  }
+}
+
+/* web responsive desktop */
+@media screen and (min-width: 900px) {
+  .h1 {
+    font-size: 8em;
+  }
+  .h2 {
+    font-size: 8em;
+  }
+  .logo img {
+    height: 400px;
+    width: 100px;
   }
   .sidepanel {
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    height: 350px;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 40px;
+    height: 450px;
+    width: 1000px;
   }
-  
   .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #a2a2a2;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-  
-  .openbtn {
-    position: absolute;
-    top: 20px;
-    left: 20px;
     font-size: 30px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
   }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  .logo {
-    size: 100%;
-  }
-
-  section.kunst {
-    background-color: rgb(71, 70, 70);
-  }
-  section.kunstnere {
-    background-color: rgb(45, 44, 44);
-  }
-  section.aabenthus {
-    background-color: rgb(45, 44, 44);
-  }
-
-  .mySlides {
-    display: none;
-  }
-  img {
-    vertical-align: middle;
-    margin-top: 10px;
-  }
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-
-  footer {
-    background-color: rgb(23, 22, 22);
-  }
-  footer p {
-    color: #e8e8e8;
-  }
-  
+}
