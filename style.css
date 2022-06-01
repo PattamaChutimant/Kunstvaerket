@@ -209,6 +209,9 @@ footer p {
     width: 80px;
     padding: 20px 30px;
   }
+  .openbtn {
+    font-size: 50px;
+  }
 }
 
 /* web responsive desktop */
@@ -219,13 +222,8 @@ footer p {
   .h2 {
     font-size: 8em;
   }
-  .logo img {
-    height: 400px;
-    width: 100px;
-  }
   .sidepanel {
     height: 450px;
-    width: 1000px;
   }
   .sidepanel a {
     font-size: 30px;
