@@ -1,9 +1,8 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   margin: 20px;
   padding: 10px 15px;
   background-color: #1d1d1d;
@@ -17,18 +16,17 @@ h1 {
 }
 h2 {
   font-size: 1em;
-  color: #930017;
-  padding: 20px 20px 10px 20px;
+  padding: 10px;
   color: #c9c9c9;
 }
-
 p {
-  padding: 10px 20px 10px 20px;
+  padding: 10px;
+  color: #e8e8e8;
 }
+
 main {
   position: relative;
 }
-
 .h1 {
   position: absolute;
   right: 5px;
@@ -44,10 +42,6 @@ main {
   font-size: 2em;
   font-family: roboto;
   color: #777a84;
-}
-
-p {
-  color: #e8e8e8;
 }
 
 .sidepanel {
@@ -188,12 +182,15 @@ img {
   }
 }
 
-footer {
-  background-color: rgb(23, 22, 22);
+.kontakt {
+    display:block;
+    text-align: left;
+    background-color: rgb(56, 55, 55);
 }
-footer p {
+.kontakt p {
   color: #e8e8e8;
 }
+
 
 /* web responsive tablet */
 @media screen and (min-width: 700px) {
@@ -221,10 +218,7 @@ footer p {
   }
   .h2 {
     font-size: 8em;
-  }
-  .sidepanel {
-    height: 450px;
-  }
+  } 
   .sidepanel a {
     font-size: 30px;
   }
