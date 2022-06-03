@@ -199,11 +199,11 @@ video {
     font-size: 4em;
     padding: 100px 10px 50px 100px;
   }
-  .logo img {
+  /*.logo img {
     height: 600px;
     width: 80px;
     padding: 20px 30px;
-  }
+  }*/
   .openbtn {
     font-size: 50px;
   }
