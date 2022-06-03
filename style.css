@@ -101,13 +101,13 @@ main {
 }
 
 section.kunst {
-  background-color: rgb(71, 70, 70);
+  background-color: rgb(52, 52, 52);
 }
 section.kunstnere {
-  background-color: rgb(45, 44, 44);
+  background-color: rgb(52, 52, 52);
 }
 section.aabenthus {
-  background-color: rgb(45, 44, 44);
+  background-color: rgb(52, 52, 52);
 }
 
 .laesmere:link, .laesmere:visited {
@@ -195,6 +195,10 @@ video {
 }
 .footer {
   background-color: rgb(52, 52, 52);
+}
+
+.footer p {
+  margin: 5px;
 }
 /* web responsive tablet */
 @media screen and (min-width: 500px) {
