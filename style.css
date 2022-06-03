@@ -27,6 +27,8 @@ p {
 
 main {
   position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .h1 {
   position: absolute;
@@ -106,6 +108,10 @@ section.kunstnere {
 }
 section.aabenthus {
   background-color: rgb(45, 44, 44);
+}
+
+.laesmere:link, .laesmere:visited {
+color: #b4051f;
 }
 
 .mySlides {
@@ -188,7 +194,7 @@ video {
   }
 }
 .footer {
-  background-color: #bbb;
+  background-color: rgb(52, 52, 52);
 }
 /* web responsive tablet */
 @media screen and (min-width: 500px) {
